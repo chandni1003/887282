@@ -1293,15 +1293,7 @@
 
 
     .footer {
-
-      display: flex;
-
-      flex-wrap: wrap;
-
-      align-items: center;
-
-      justify-content: space-between;
-
+      display: grid;
       gap: 0.75rem;
 
       padding: 0.5rem 0;
@@ -1322,7 +1314,18 @@
 
     }
 
+    .footer-main {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
 
+    .footer-credit {
+      margin: 0;
+      color: var(--cp-text-muted);
+    }
 
     @media (min-width: 44rem) {
 
@@ -1703,11 +1706,14 @@
 
 
       <footer class="footer">
-
-        <span>Made for one-tap concert sharing.</span>
-
-        <a href="#page-title">Back to top</a>
-
+        <div class="footer-main">
+          <span>Made for one-tap concert sharing.</span>
+          <a href="#page-title">Back to top</a>
+        </div>
+        <p class="footer-credit">
+          NFC coins created with help from
+          <a href="https://www.instagram.com/minihabi.nl/" target="_blank" rel="noopener noreferrer">@minihabi.nl</a>.
+        </p>
       </footer>
 
     </div>
